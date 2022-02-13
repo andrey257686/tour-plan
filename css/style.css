@@ -1029,6 +1029,7 @@ template {
 }
 
 .reviews-slider__text {
+  max-height: 114px;
   max-width: 537px;
   font-style: normal;
   font-weight: normal;
@@ -1036,6 +1037,7 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  overflow: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1105,6 +1107,18 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__text {
+    max-height: 133px;
+  }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
   }
 }
 
@@ -1221,15 +1235,18 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -85px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -85px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+  .reviews-slider__text {
+    max-height: 266px;
   }
   .reviews__title {
     font-style: normal;
