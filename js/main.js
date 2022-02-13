@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const hotelSlider = new Swiper(".hotel-slider", {
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -8,8 +8,22 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
+  effect: "coverflow",
+});
+const reviewsSlider = new Swiper(".reviews-slider", {
+  // keyboard: {
+    // enabled: true,
+    // onlyInViewport: false,
+  // },
+  // Optional parameters
+  loop: false,
 
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
 });
