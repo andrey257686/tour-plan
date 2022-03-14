@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -1128,6 +1128,225 @@ template {
   cursor: pointer;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.packages-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  grid-gap: 30px;
+}
+
+.pack__image {
+  width: 100%;
+  height: 100%;
+}
+
+.pack__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.pack__name_big {
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.pack__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160.6%;
+  max-height: 165px;
+  max-width: 300px;
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.pack_big {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.pack_small {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pack__description-side {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 21px;
+}
+
+.pack__description-side_big {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  left: 50%;
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 46px;
+  padding-left: 43px;
+  padding-right: 21px;
+}
+
+.pack__image-side_big {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.pack__image-side_big::after {
+  content: "Flash Offer";
+  position: absolute;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  left: 0;
+  top: 26px;
+  border-radius: 0 4px 4px 0;
+}
+
+.pack__image-side_small {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.pack__image-side_small::after {
+  content: "Flash Offer";
+  position: absolute;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  left: 0;
+  top: 26px;
+  border-radius: 0 4px 4px 0;
+}
+
+.pack__rating {
+  margin-bottom: 5px;
+}
+
+.pack__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pack__pricetag_old {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.pack__pricetag_new {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.pack__booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pack__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  padding: 10px 26px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pack__short-info_big {
+  margin-bottom: 37px;
+}
+
+.pack__short-info_small {
+  margin-bottom: 24px;
+}
+
+.short-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.short-info__description {
+  margin-left: 14px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1196,6 +1415,15 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .packages-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
+    grid-gap: 20px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1311,6 +1539,32 @@ template {
   .map {
     width: 100%;
   }
+  .pack__name {
+    margin-bottom: 20px;
+  }
+  .pack__name_big {
+    margin-bottom: 12px;
+  }
+  .pack__description {
+    max-height: 210px;
+    margin-bottom: 20px;
+  }
+  .pack__description-side {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pack__description-side_big {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .pack__button {
+    padding: 10px 15px;
+  }
+  .pack__short-info_small {
+    margin-bottom: 30px;
+  }
   .newsletter {
     padding: 76px 0 83px 0;
   }
@@ -1379,6 +1633,60 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .packages-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pack {
+    height: 500px;
+    width: 100%;
+  }
+  .pack__name_big {
+    margin-bottom: 20px;
+  }
+  .pack__rating {
+    display: none;
+  }
+  .pack__description {
+    display: none;
+  }
+  .pack__description-side_big {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #0A223D;
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 21px;
+  }
+  .pack__image-side_big {
+    width: 100%;
+    height: 50%;
+  }
+  .pack__image-side_big::after {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 4px 9px;
+    left: 0;
+    top: 26px;
+  }
+  .pack__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pack__short-info_big {
+    margin-bottom: 30px;
   }
   .activities {
     padding-top: 40px;

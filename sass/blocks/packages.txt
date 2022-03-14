@@ -1,0 +1,28 @@
+.pack
+  border: 1px solid red
+  &_big
+    display: flex
+    grid-area: big-pack
+    align-items: center
+    justify-content: space-between
+  &__pack_one
+    grid-area: small-pack-1
+  &__pack_two
+    grid-area: small-pack-2
+  &__pack_three
+    grid-area: small-pack-3
+  &__pack_four
+    grid-area: small-pack-4
+  &__image-side
+    &_big
+      min-width: 366px
+      height: 500px
+    &_small
+      min-width: 350px
+      height: 250px
+  &__image
+      width: 100%
+      height: 100%
+  &__description-side_big
+    width: 364px
+    height: 500px

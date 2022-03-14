@@ -1,0 +1,158 @@
+.packages
+  padding: 40px 0 70px 0
+  &__title
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+  &-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 500px 500px
+    grid-gap: 30px
+.pack
+  &__image
+    width: 100%
+    height: 100%
+  &__name
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 23px
+    &_big
+      margin-top: 0
+      margin-bottom: 27px
+  &__description
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 160.6%
+    max-height: 165px
+    max-width: 300px
+    overflow: auto
+    margin-top: 0
+    margin-bottom: 34px
+  &_big
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    grid-column-start: 1
+    grid-column-end: 3
+  &_small
+    position: relative
+    overflow: hidden
+    border-radius: 8px
+  &__description-side
+    position: absolute
+    width: 100%
+    height: 50%
+    bottom: 0
+    left: 0
+    background-color: $dark
+    color: $light
+    padding-top: 30px
+    padding-left: 32px
+    padding-right: 21px
+    &_big
+      position: absolute
+      width: 50%
+      height: 100%
+      right: 0
+      left: 50%
+      background-color: $dark
+      color: $light
+      padding-top: 46px
+      padding-left: 43px
+      padding-right: 21px
+  &__image-side
+    &_big
+      position: relative
+      top: 0
+      left: 0
+      width: 50%
+      height: 100%
+      &::after
+        content: "Flash Offer"
+        position: absolute
+        color: $light
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        padding: 8px 12px
+        background-color: $primary
+        left: 0
+        top: 26px
+        border-radius: 0 4px 4px 0
+    &_small
+      position: relative
+      width: 100%
+      height: 50%
+      &::after
+        content: "Flash Offer"
+        position: absolute
+        color: $light
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        padding: 4px 9px
+        background-color: $primary
+        left: 0
+        top: 26px
+        border-radius: 0 4px 4px 0
+  &__rating
+    margin-bottom: 5px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__pricetag
+    &_old
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &_new
+      font-style: normal
+      font-weight: 700
+      font-size: 24px
+      line-height: 30px
+  &__booking
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__button
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    padding: 10px 26px
+    border: none
+    background-color: $primary
+    border-radius: 4px
+    cursor: pointer
+  &__short-info
+    &_big
+      margin-bottom: 37px
+    &_small
+      margin-bottom: 24px
+.short-info
+  &__text
+    display: flex
+    align-items: center
+    margin-bottom: 11px
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+  &__description
+    margin-left: 14px
