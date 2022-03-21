@@ -15,8 +15,8 @@ const hotelSlider = new Swiper(".hotel-slider", {
 });
 const reviewsSlider = new Swiper(".reviews-slider", {
   // keyboard: {
-    // enabled: true,
-    // onlyInViewport: false,
+  // enabled: true,
+  // onlyInViewport: false,
   // },
   // Optional parameters
   loop: false,
@@ -26,4 +26,12 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
   },
+});
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Click on menu");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom__visible");
 });
