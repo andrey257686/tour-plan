@@ -41,7 +41,7 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-  $(document).on('keydown', function (event) {
+  $(document).on("keydown", function (event) {
     if (event.key == "Escape") {
       closeModal(event);
     }
@@ -60,4 +60,13 @@ $(document).ready(function () {
     modaOverlay.removeClass("modal__overlay_visible");
     modaDialog.removeClass("modal__dialog_visible");
   }
+  
+  $("#modal__form").validate({
+    debug: true,
+  });
+
+  modalButton.on("click", function(){
+    console.log("youclickedyouclickedyouclicked");
+  });
+
 });

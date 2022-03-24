@@ -235,7 +235,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -894,18 +896,31 @@
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form
+          action=""
+          method="POST"
+          id="modal__form"
+          class="modal__form"
+        >
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Your email*"
+            name="email"
           />
           <textarea
             class="message modal__message"
@@ -919,9 +934,11 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax/parallax.js"></script>
   </body>
