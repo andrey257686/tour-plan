@@ -60,13 +60,23 @@ $(document).ready(function () {
     modaOverlay.removeClass("modal__overlay_visible");
     modaDialog.removeClass("modal__dialog_visible");
   }
-  
-  $("#modal__form").validate({
-    debug: true,
-  });
 
-  modalButton.on("click", function(){
-    console.log("youclickedyouclickedyouclicked");
-  });
-
+  $(".form").each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите имя!",
+          minlength: "Имя доолжно быть не короче 2-х символов",
+        },
+        email: {
+          required: "We need your email",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен!",
+        },
+      },
+    });
+  })
 });
