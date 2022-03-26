@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -23,11 +24,17 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
             />
           </a>
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
           >
             <input
               type="text"
@@ -38,7 +45,13 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -159,7 +172,7 @@
         <!-- /.hotel-info -->
         <div class="hotel-grid">
           <!-- Slider main container -->
-          <div class="swiper hotel-slider hotel__slider">
+          <div class="swiper hotel-slider hotel__slider" data-aos="fade-data-aos="fade-up"" data-aos-duration="1500">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -260,7 +273,11 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-grid">
-          <div class="pack pack_big">
+          <div
+            class="pack pack_big"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="pack__image-side pack__image-side_big">
               <img
                 src="img/big-pack.jpg"
@@ -322,7 +339,11 @@
             <!-- /.pack__description-side -->
           </div>
           <!-- /.pack -->
-          <div class="pack pack_small">
+          <div
+            class="pack pack_small"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="pack__image-side pack__image-side_small">
               <img
                 src="img/small-pack-1.jpg"
@@ -369,7 +390,11 @@
             <!-- /.pack__description-side -->
           </div>
           <!-- /.pack -->
-          <div class="pack pack_small">
+          <div
+            class="pack pack_small"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="pack__image-side pack__image-side_small">
               <img
                 src="img/small-pack-2.jpg"
@@ -416,7 +441,11 @@
             <!-- /.pack__description-side -->
           </div>
           <!-- /.pack -->
-          <div class="pack pack_small">
+          <div
+            class="pack pack_small"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="pack__image-side pack__image-side_small">
               <img
                 src="img/small-pack-3.jpg"
@@ -463,7 +492,11 @@
             <!-- /.pack__description-side -->
           </div>
           <!-- /.pack -->
-          <div class="pack pack_small">
+          <div
+            class="pack pack_small"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="pack__image-side pack__image-side_small">
               <img
                 src="img/small-pack-4.jpg"
@@ -551,7 +584,11 @@
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
         <div class="swiper reviews-slider">
-          <div class="swiper-wrapper">
+          <div
+            class="swiper-wrapper"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
@@ -674,7 +711,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -684,7 +726,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -694,7 +741,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -704,7 +756,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -897,7 +954,7 @@
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <div class="modal__dialog" >
         <a href="" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
@@ -940,6 +997,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax/parallax.js"></script>
