@@ -63,6 +63,10 @@ $(document).ready(function () {
 
   $(".form").each(function(){
     $(this).validate({
+      invalidHandler: function(){
+        var modalInput = $(".modal__input");
+        modalInput.addClass('animate__animated animate__shakeX');
+      },
       errorClass: "invalid",
       messages: {
         name: {
